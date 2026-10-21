@@ -1,0 +1,92 @@
+/* ==========================================
+   Apple Section 2 (iPhone 11 Pro) Styles
+   ========================================== */
+
+.iphone-11-pro {
+    text-align: center;
+    background-image: url("/iphone11-pro-bg.jpg");
+    background-position: center;
+    height: 580px;
+    background-repeat: no-repeat;
+    padding: 65px 20px;
+    background-size: cover;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: -0.005em;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+
+.discription {
+    font-size: 27px;
+    line-height: 1.14815;
+    font-weight: 400;
+    letter-spacing: 0.009em;
+    padding: 4px 0;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-size: 17px;
+    line-height: 1.47059;
+    color: #86868b;
+    margin-bottom: 14px;
+}
+
+.link-part {
+    padding-top: 5px;
+}
+
+.link-part ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-part ul li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.link-part ul li:last-child {
+    padding-right: 0;
+}
+
+.link-part ul li a {
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 17px;
+    line-height: 1.47059;
+}
+
+.link-part ul li a:hover {
+    text-decoration: underline;
+}
+
+.link-part ul li a::after {
+    font-family: "FontAwesome", sans-serif;
+    font-weight: 900;
+    content: "\f105";
+    padding-left: 6px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .iphone-11-pro {
+        height: 500px;
+        padding-top: 45px;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .discription {
+        font-size: 21px;
+    }
+}

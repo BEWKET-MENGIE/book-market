@@ -1,0 +1,132 @@
+.main-section5 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 100%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.servant,
+.Airpods-pro {
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 48.5%;
+    margin: 1% 0.5% 0 0.5%;
+    padding-top: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Servant / Apple TV+ Card */
+.main-section5 .servant {
+    background-image: url("/apple-tv-background.jpg");
+    color: #ffffff;
+}
+
+.servant .icon1 img {
+    height: 32px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.servant .icon2 img {
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.servant .icon3 h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.servant .icon3 a {
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 17px;
+}
+
+.servant .icon3 a:hover {
+    text-decoration: underline;
+}
+
+.servant .icon3 a::after {
+    font-family: "FontAwesome", sans-serif;
+    font-weight: 900;
+    content: "\f144"; /* Play icon */
+    padding-left: 8px;
+}
+
+/* AirPods Pro Card */
+.main-section5 .Airpods-pro {
+    background-image: url("/air-pods.jpg");
+    color: #ffffff;
+}
+
+.Airpods-pro .txt1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.006em;
+    margin-bottom: 6px;
+}
+
+.Airpods-pro .txt2 {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    margin-bottom: 14px;
+    color: #f5f5f7;
+}
+
+.Airpods-pro .txt3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Airpods-pro .txt3 ul li {
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.Airpods-pro .txt3 ul li:last-child {
+    padding-right: 0;
+}
+
+.Airpods-pro .txt3 ul li a {
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 17px;
+}
+
+.Airpods-pro .txt3 ul li a:hover {
+    text-decoration: underline;
+}
+
+.Airpods-pro .txt3 ul li a::after {
+    font-family: "FontAwesome", sans-serif;
+    font-weight: 900;
+    content: "\f105";
+    padding-left: 6px;
+}
+
+/* Responsive Breakpoint for Mobile */
+@media (max-width: 768px) {
+    .main-section5 {
+        flex-direction: column;
+    }
+    .servant,
+    .Airpods-pro {
+        width: 100%;
+        margin: 1% 0;
+        height: 500px;
+    }
+}

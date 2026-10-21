@@ -1,0 +1,146 @@
+/* ==========================================
+   Apple Header Component Styles
+   ========================================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.header-wrapper {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    font-weight: 300;
+    font-size: 12px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;    
+    z-index: 1000;
+    height: 44px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.internal-wrapper {
+    width: 980px;
+    padding: 0 10px;
+    margin: 0 auto;
+}   
+
+.header-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 44px;
+    align-items: center;
+}
+
+.header-wrapper .header-links-wrapper ul li {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    padding: 12px 10px 10px;
+}
+
+.header-wrapper .header-links-wrapper ul li a {
+    text-decoration: none;
+    color: #f5f5f7;
+    font-size: 12px;
+}
+
+.header-wrapper .header-links-wrapper ul li:hover {
+    opacity: 1;
+}
+
+.logo-link,
+.search-link,
+.cart-link {
+    width: 18px;
+    display: block;
+    cursor: pointer;
+}
+
+.header-wrapper .header-links-wrapper ul li.search-link,
+.header-wrapper .header-links-wrapper ul li.cart-link,
+.header-wrapper .header-links-wrapper ul li.logo-link {
+    padding: 12px 0 10px;
+}
+
+/* Interactive Search Bar Overlay */
+.search-container {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.search-input {
+    width: 600px;
+    max-width: 100%;
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: #1d1d1f;
+    border: 1px solid #424245;
+    color: #f5f5f7;
+    border-radius: 6px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #2997ff;
+}
+
+/* Interactive Cart Dropdown Response */
+.cart-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 300px;
+    background-color: #ffffff;
+    color: #1d1d1f;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    z-index: 1001;
+    border: 1px solid #d2d2d7;
+}
+
+.cart-dropdown h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.cart-dropdown p {
+    font-size: 13px;
+    color: #515154;
+    margin-bottom: 15px;
+}
+
+.cart-dropdown button {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.cart-dropdown button:hover {
+    background-color: #0077ed;
+}

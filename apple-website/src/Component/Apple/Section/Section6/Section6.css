@@ -1,0 +1,110 @@
+.main-section6 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 100%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.MacBook-pro,
+.ipad {
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 48.5%;
+    margin: 1% 0.5% 0 0.5%;
+    padding-top: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.MacBook-pro {
+    background-image: url("/macbook-pro.jpg");
+    color: #1d1d1f;
+}
+
+.ipad {
+    background-image: url("/new-ipad.jpg");
+    color: #1d1d1f;
+}
+
+.fff {
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    color: #868686;
+    margin-bottom: 4px;
+}
+
+.dddd {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.005em;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.brightness,
+.like-computer,
+.the-new {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.link-part6 {
+    padding-top: 5px;
+}
+
+.link-part6 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-part6 ul li {
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.link-part6 ul li:last-child {
+    padding-right: 0;
+}
+
+.link-part6 ul li a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 17px;
+    line-height: 1.47059;
+}
+
+.link-part6 ul li a:hover {
+    text-decoration: underline;
+}
+
+.link-part6 ul li a::after {
+    font-family: "FontAwesome", sans-serif;
+    font-weight: 900;
+    content: "\f105";
+    padding-left: 6px;
+}
+
+/* Responsive Breakpoint for Mobile */
+@media (max-width: 768px) {
+    .main-section6 {
+        flex-direction: column;
+    }
+    .MacBook-pro,
+    .ipad {
+        width: 100%;
+        margin: 1% 0;
+        height: 500px;
+    }
+}

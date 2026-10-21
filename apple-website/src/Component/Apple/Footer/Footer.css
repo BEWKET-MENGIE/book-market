@@ -1,0 +1,157 @@
+/* ==========================================
+   Apple Footer Component Styles
+   ========================================== */
+
+.footer-link-wrapper {
+    background-color: #f5f5f7;
+    font-size: 12px;
+    color: #515154;
+    line-height: 1.33337;
+    font-weight: 400;
+    padding: 20px 0 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer-part {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.text-container {
+    border-bottom: 1px solid #d2d2d7;
+    color: #868686;
+    padding: 17px 0 20px;
+    font-size: 11px;
+    line-height: 1.33333;
+}
+
+.text-container a {
+    color: #515154;
+    text-decoration: none;
+}
+
+.text-container a:hover {
+    text-decoration: underline;
+}
+
+.body-link {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.body-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.body-link ul li {
+    font-size: 12px;
+    padding: 4px 0;
+}
+
+.body-link a {
+    text-decoration: none;
+    color: #515154;
+}
+
+.body-link ul li a:hover {
+    text-decoration: underline;
+}
+
+.body-link h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.body-link h3:first-child {
+    margin-top: 0;
+}
+
+.my-apple-role {
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    color: #515154;
+}
+
+.my-apple-role a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.my-apple-role a:hover {
+    text-decoration: underline;
+}
+
+.copyright-apple-wrapper {
+    display: flex;
+    padding: 10px 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.copyright {
+    color: #868686;
+}
+
+.footer-link-term ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link-term ul li {
+    display: inline-block;
+    border-right: 1px solid #d2d2d7;
+    padding: 0 7px;
+    font-size: 11px;
+}
+
+.footer-link-term ul li:first-child {
+    padding-left: 0;
+}
+
+.footer-link-term ul li:last-child {
+    border-right: 0px;
+}
+
+.footer-link-term ul li a {
+    text-decoration: none;
+    color: #515154;
+}
+
+.footer-link-term ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-country {
+    display: flex;
+    align-items: center;
+}
+
+.flag-wrapper {
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.flag-wrapper img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.footer-country-name {
+    vertical-align: middle;
+    color: #515154;
+}

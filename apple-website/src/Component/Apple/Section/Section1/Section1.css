@@ -1,0 +1,104 @@
+/* ==========================================
+   Apple Section 1 (MacBook Pro) Styles
+   ========================================== */
+
+.section-11 {
+    background-color: #fbfbfd;
+    text-align: center;
+    padding: 55px 0 0 0;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1d1d1f;
+}
+
+.macbook-pro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.aa1 {
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    color: #868686;
+    margin-bottom: 6px;
+}
+
+.bb2 {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: -0.005em;
+    color: #1d1d1f;
+    margin-bottom: 6px;
+}
+
+.cc3 {
+    font-size: 27px;
+    line-height: 1.14815;
+    font-weight: 400;
+    letter-spacing: 0.009em;
+    color: #1d1d1f;
+    margin-bottom: 14px;
+}
+
+.dd4 {
+    padding: 5px 0 30px 0;
+}
+
+.dd4 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dd4 ul li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.dd4 ul li:last-child {
+    padding-right: 0;
+}
+
+.dd4 ul li a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 17px;
+    line-height: 1.47059;
+}
+
+.dd4 ul li a:hover {
+    text-decoration: underline;
+}
+
+.dd4 ul li a::after {
+    font-family: "FontAwesome", sans-serif;
+    font-weight: 900;
+    content: "\f105";
+    padding-left: 6px;
+}
+
+.ee5 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ee5 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .bb2 {
+        font-size: 40px;
+    }
+    .cc3 {
+        font-size: 21px;
+    }
+}

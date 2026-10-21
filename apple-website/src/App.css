@@ -1,0 +1,226 @@
+/* ==========================================
+   Apple Website Layout & Component Styles
+   ========================================== */
+
+/* App Container */
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Counter Component Styles */
+.counter {
+  font-size: 16px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  color: var(--accent, #0066cc);
+  background: var(--accent-bg, #f5f5f7);
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 24px;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--accent-border, #0071e3);
+    background: #e8e8ed;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent, #0066cc);
+    outline-offset: 2px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .framework,
+  .vite {
+    position: absolute;
+  }
+
+  .framework {
+    z-index: 1;
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4);
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8);
+  }
+}
+
+/* Center Content Wrapper */
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  padding: 40px 20px;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+/* Next Steps Section */
+#next-steps {
+  display: flex;
+  border-top: 1px solid var(--border, #d2d2d7);
+  text-align: left;
+  width: 100%;
+
+  & > div {
+    flex: 1 1 0;
+    padding: 32px;
+
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Documentation Block */
+#docs {
+  border-right: 1px solid var(--border, #d2d2d7);
+
+  @media (max-width: 1024px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border, #d2d2d7);
+  }
+}
+
+/* Next Steps Navigation List */
+#next-steps ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  margin: 32px 0 0;
+
+  .logo {
+    height: 18px;
+  }
+
+  a {
+    color: var(--text-h, #1d1d1f);
+    font-size: 16px;
+    border-radius: 6px;
+    background: var(--social-bg, #f5f5f7);
+    display: flex;
+    padding: 8px 14px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      box-shadow: var(--shadow, 0 4px 12px rgba(0, 0, 0, 0.08));
+      background: #e8e8ed;
+    }
+
+    .button-icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+}
+
+/* Layout Spacer */
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border, #d2d2d7);
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+/* Ticks Indicator */
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border, #d2d2d7);
+  }
+
+  &::after {
+    right: 0;
+    border-right-color: var(--border, #d2d2d7);
+  }
+}
