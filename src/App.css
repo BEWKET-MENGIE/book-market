@@ -1,0 +1,203 @@
+
+.app {
+  min-height: 100vh;
+  background: #f5f6f7;
+  color: #252525;
+}
+
+.store-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.store-navigation button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.store-navigation button:hover {
+  background: #388e3c;
+}
+
+.store-main {
+  min-height: 65vh;
+}
+
+.store-hero {
+  padding: 55px 20px;
+  text-align: center;
+  background: #173b2a;
+  color: #fff;
+}
+
+.store-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #a7e3b0;
+}
+
+.store-hero h1 {
+  max-width: 800px;
+  margin: 12px auto;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  line-height: 1.2;
+}
+
+.store-hero p:last-child {
+  max-width: 620px;
+  margin: 16px auto 0;
+  line-height: 1.7;
+}
+
+.catalog-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 24px 50px;
+}
+
+.catalog-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.catalog-heading h2 {
+  margin: 0;
+}
+
+.catalog-heading p {
+  color: #64748b;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.no-books-found,
+.checkout-placeholder {
+  max-width: 650px;
+  margin: 35px auto;
+  padding: 35px 20px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.no-books-found button,
+.checkout-placeholder button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.page-container {
+  min-height: 60vh;
+}
+
+.home-hero {
+  padding: 45px 20px;
+  text-align: center;
+  background: #173b2a;
+  color: white;
+}
+
+.home-hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.home-catalog {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 24px;
+}
+
+.not-found-page {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.not-found-page h1 {
+  margin: 0;
+  font-size: 5rem;
+  color: #4caf50;
+}
+
+.not-found-page button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-user {
+  align-self: center;
+  color: #334155;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.app-error {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 14px;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.no-books-found button:focus-visible,
+.store-navigation button:focus-visible {
+  outline: 2px solid #166534;
+  outline-offset: 3px;
+}
+
+@media (max-width: 1000px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog-section {
+    padding: 24px 14px 35px;
+  }
+
+  .catalog-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .store-hero {
+    padding: 40px 18px;
+  }
+}

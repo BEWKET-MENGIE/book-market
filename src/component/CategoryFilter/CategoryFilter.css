@@ -1,0 +1,40 @@
+
+.category-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px auto;
+}
+
+.category-filter label {
+  color: #374151;
+  font-weight: 600;
+}
+
+.category-filter select {
+  min-width: 200px;
+  padding: 11px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.category-filter select:focus {
+  outline: 2px solid #4caf50;
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .category-filter {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .category-filter select {
+    width: 100%;
+  }
+}

@@ -1,32 +1,37 @@
-import { Component } from 'react'
-import './Product.css'
-import ProductCard from '../ProductCard/ProductCard'
-import  bookInfo  from '../Constant/constant.js'
 
-class Product extends Component {
-  
+import ProductCard from "../ProductCard/ProductCard";
+import "./Product.css";
 
-  render() {
-    return ( 
-      <div className="container">
-       
-        {bookInfo.map((item) => {
-          const { color, title, imgLink, price, description } = item;
-          return(
-          <ProductCard 
-            color={color}
-            title={title}
-            imgLink={imgLink}
-            price={price}
-            description={description}
-          /> 
-        )
-        })}
-      </div>  
-
-    )
+function Product({
+  books = [],
+  onViewDetails,
+  isWishlisted,
+  onToggleWishlist,
+}) {
+  if (books.length === 0) {
+    return (
+      <div className="product-empty">
+        <h3>No books available</h3>
+        <p>Please try another search or category.</p>
+      </div>
+    );
   }
 
+  return (
+    <section className="product-section">
+      <div className="product-grid">
+        {books.map((book) => (
+          <ProductCard
+            key={book.id}
+            book={book}
+            onViewDetails={onViewDetails}
+            isWishlisted={isWishlisted?.(book.id)}
+            onToggleWishlist={onToggleWishlist}
+          />
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Product;

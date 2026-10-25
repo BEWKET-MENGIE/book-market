@@ -1,16 +1,80 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Evangadi Book Store
 
-Currently, two official plugins are available:
+A React and Vite bookstore frontend for browsing books, searching the catalog,
+filtering categories, managing a shopping cart, and saving a wishlist.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
 
-## React Compiler
+- React
+- JavaScript
+- Vite
+- CSS
+- Browser localStorage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Requirements
 
-## Expanding the ESLint configuration
+- Node.js
+- npm
+- Git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+Clone the repository or open the project directory.
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a local `.env` file:
+
+```dotenv
+VITE_API_URL=http://localhost:3000/api
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Available features
+
+- Book catalog
+- Search by title, author, and description
+- Category filtering
+- Book details
+- Add and remove cart items
+- Quantity and subtotal calculations
+- Persistent cart
+- Wishlist
+- Checkout form validation
+- Login and registration form interfaces
+- Order history interface
+
+## Backend requirements
+
+The frontend service layer expects a backend API for books, authentication,
+and orders. Configure the API URL using `VITE_API_URL`.
+
+Authentication, order creation, and payment processing must be implemented
+and secured on the backend before the application is used for real customers.
+
+## Production build
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Notes
+
+Book records and prices in the sample data are illustrative.
+Replace them with verified catalog information before publishing.
